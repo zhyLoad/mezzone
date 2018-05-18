@@ -1,6 +1,7 @@
 
 from __future__ import absolute_import, unicode_literals
 import os
+import sys
 
 from django import VERSION as DJANGO_VERSION
 from django.utils.translation import ugettext_lazy as _
@@ -194,6 +195,8 @@ MEDIA_ROOT = os.path.join(PROJECT_ROOT, *MEDIA_URL.strip("/").split("/"))
 # Package/module name to import the root urlpatterns from for the project.
 ROOT_URLCONF = "%s.urls" % PROJECT_APP
 
+sys.path.insert(0, os.path.join(PROJECT_ROOT, 'themeapps'))
+
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
@@ -230,6 +233,7 @@ if DJANGO_VERSION < (1, 9):
 ################
 
 INSTALLED_APPS = (
+   # "themeapps.nova",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",

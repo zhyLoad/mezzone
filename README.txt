@@ -30,3 +30,4 @@ Git获取：git clone https://github.com/stephenmcd/mezzanine.git
    SQLite 3.21.0
    Windows 7
 
+

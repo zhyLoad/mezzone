@@ -1,0 +1,11 @@
+in file settings.py:
+you should edit this code :
+"INSTALLED_APPS = (
+    "django.contrib.admin",
+    "django.contrib.auth",
+    "django.contrib.contenttypes",
+    "django.contrib.redirects",
+    //...
+    )"
+    before the "django.contrib.admin",you must add this code:'"themeapps.XXXXX",'(for example : you want to user the solid theme ,just add this code 'temeapps.solid')
+    as well as you deal this operation, to make sure in file settings.py ,you has added the code :"sys.path.insert(0, os.path.join(PROJECT_ROOT, 'themeapps'))" to register the themeapps folder in your project
