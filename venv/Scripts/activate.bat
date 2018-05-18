@@ -1,5 +1,5 @@
 @echo off
-set "VIRTUAL_ENV=D:\Git_local\python\git-codes\mezzanine\mezzone\mozzone\venv"
+set "VIRTUAL_ENV=D:\Git_local\python\git-codes\mezzanine\mezzone\mezzone\venv"
 
 if not defined PROMPT (
     set "PROMPT=$P$G"

@@ -1,4 +1,4 @@
-#!d:\git_local\python\git-codes\mezzanine\mezzone\mozzone\venv\scripts\python3.exe
+#!d:\git_local\python\git-codes\mezzanine\mezzone\mezzone\venv\scripts\python3.exe
 from django.core import management
 
 if __name__ == "__main__":
